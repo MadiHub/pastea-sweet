@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pastea Sweet</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+      @font-face {
+        font-family: 'Poppins SemiBold';
+        src: url("/poppins_font/Poppins-SemiBold.ttf");
+      }
+      body {
+        background-color: #EEDCC4;
+      }
+      .nav-item {
+        font-family: 'Poppins SemiBold';
+        color: #000000;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+</body>
+
+<!-- NAVBAR -->
+<nav class="bg-[#EEDCC4] w-full">
+  <div class="container flex items-center justify-between p-4 mx-auto px-4 md:px-4 lg:px-[8rem]">
+    <div class="nav-brand text-lg font-bold">
+      <img src="logo/pasteasweet.png" alt="Logo Pasteasweet" class="w-20 h-auto">
+    </div>
+    <div class="md:hidden cursor-pointer" onclick="toggleMenu()">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </div>
+    <div class="nav-item hidden md:flex space-x-4 font-bold" id="navMenu">
+      <a href="/" class="px-3 text-lg py-2 hover:text-orange-900">Home</a>
+      <a href="/daftar" class="px-3 text-lg py-2 hover:text-orange-900">About</a>
+      <a href="/" class="px-3 text-lg py-2 hover:text-orange-900">Menu</a>
+      <a href="/" class="px-3 text-lg py-2 hover:text-orange-900">Contact</a>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="md:hidden hidden font-bold" id="navMenuMobile">
+    <div class="flex flex-col space-y-2 p-4">
+      <a href="/" class="block px-3 text-lg py-2 hover:text-orange-900">Home</a>
+      <a href="/daftar" class="block px-3 text-lg py-2 hover:text-orange-900">About</a>
+      <a href="/" class="block px-3 text-lg py-2 hover:text-orange-900">Menu</a>
+      <a href="/" class="block px-3 text-lg py-2 hover:text-orange-900">Contact</a>
+    </div>
+  </div>
+</nav>
+<!-- NAVBAR END -->
+
+<!-- HERO -->
+<hero>
+  <img src="hero/hero.png" alt="Hero Image" class="object-cover w-full h-full">
+</hero>
+<!-- HERO END -->
+
+<!-- ABOUT -->
+<div class="about">
+  <div class="container mx-auto px-4 md:px-4 lg:px-[8rem] flex flex-col md:flex-row items-center p-10">
+    <div class="md:w-2/3">
+      <h2 class="text-3xl font-bold mb-4">About Us</h2>
+      <p class="text-lg">
+        Selamat datang di Pastea Sweet!
+        Di Pastea Sweet, kami percaya bahwa segelas es teh yang
+        sempurna dapat mengubah setiap momen menjadi
+        pengalaman yang menyenangkan. Didirikan pada [Tahun],
+        kecintaan kami terhadap teh dan komitmen terhadap
+        kualitas telah mendorong kami untuk menciptakan berbagai
+        pilihan es teh yang unik, segar, dan lezat.
+      </p>
+    </div>
+    <div class="md:w-1/3 flex justify-center md:justify-end mt-4 md:mt-0">
+      <img src="logo/pasteasweet.png" alt="Logo" class="w-[50%] h-auto">
+    </div>
+  </div>
+</div>
+<!-- ABOUT END -->
+
+<div class="product bg-[#0A4E51]">
+  <div class="container mx-auto px-4 md:px-4 lg:px-[8rem] items-center p-10">
+    <h2 class="text-3xl font-bold mb-4 text-center text-white">Variant Product</h2>
+    <div
+      class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 place place-items-start md:place-items-center lg:place-items-center mt-[60px]">
+      <div class="flex items-center gap-3">
+        <div class="justify-center w-20 h-20 rounded-full bg-[#EEDCC4] overflow-hidden">
+          <div class="absolute w-20 h-20 -rotate-12">
+            <img src="product/1.png" alt="Milk Tea" class="w-full h-full object-cover -translate-y-5">
+          </div>
+        </div>
+        <div class="desc">
+          <h3 class="text-2xl font-bold text-white">Thai Tea</h3>
+          <span class="font-bold text-xl text-[#FFA51A]">Rp 8.000</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="justify-center w-20 h-20 rounded-full bg-[#EEDCC4] overflow-hidden">
+          <div class="absolute w-20 h-20 -rotate-12">
+            <img src="product/1.png" alt="Milk Tea" class="w-full h-full object-cover -translate-y-5">
+          </div>
+        </div>
+        <div class="desc">
+          <h3 class="text-2xl font-bold text-white">Lecy Tea</h3>
+          <span class="font-bold text-xl text-[#FFA51A]">Rp 8.000</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="justify-center w-20 h-20 rounded-full bg-[#EEDCC4] overflow-hidden">
+          <div class="absolute w-20 h-20 -rotate-12">
+            <img src="product/1.png" alt="Milk Tea" class="w-full h-full object-cover -translate-y-5">
+          </div>
+        </div>
+        <div class="desc">
+          <h3 class="text-2xl font-bold text-white">Manggo Tea</h3>
+          <span class="font-bold text-xl text-[#FFA51A]">Rp 8.000</span>
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+  </div>
+</div>
+<script>
+  function toggleMenu() {
+    const navMenu = document.getElementById('navMenuMobile');
+    navMenu.classList.toggle('hidden'); // Toggle visibility of the mobile menu
+  }
+</script>
+
+
+</html>
