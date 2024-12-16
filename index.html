@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pastea Sweet</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      html {
+        scroll-behavior: smooth; 
+      }
+      .content-auto {
+        content-visibility: auto;
+      }
+      @font-face {
+        font-family: 'Poppins SemiBold';
+        src: url("/poppins_font/Poppins-SemiBold.ttf");
+      }
+      body {
+        background-color: #F3F7EC;
+      }
+      .nav-item {
+        font-family: 'Poppins SemiBold';
+        color: #000000;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+</body>
+
+<!-- NAVBAR -->
+<nav class="bg-[#F3F7EC] w-full sticky top-0 shadow z-10">
+  <div class="container flex items-center justify-between p-4 mx-auto px-4 md:px-4 lg:px-[8rem]">
+    <div class="nav-brand text-lg font-bold">
+      <img src="logo/logo-pastea-sweet.png" alt="Logo logo-pastea-sweet.png" class="w-28 h-auto">
+    </div>
+    <div class="md:hidden cursor-pointer" onclick="toggleMenu()">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </div>
+    <div class="nav-item hidden md:flex space-x-4 font-bold" id="navMenu">
+      <a href="/" class="px-3 text-lg py-2 hover:text-orange-900">Home</a>
+      <a href="#about" class="px-3 text-lg py-2 hover:text-orange-900">About Us</a>
+      <a href="#menu" class="px-3 text-lg py-2 hover:text-orange-900">Product</a>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="md:hidden hidden font-bold sticky top-0 shadow z-10 mx-auto text-center" id="navMenuMobile">
+    <div class="flex flex-col space-y-2 p-4">
+      <a href="/" class="block px-3 text-lg py-2 hover:text-orange-900">Home</a>
+      <a href="#about" class="block px-3 text-lg py-2 hover:text-orange-900">About Us</a>
+      <a href="#menu" class="block px-3 text-lg py-2 hover:text-orange-900">Product</a>
+    </div>
+  </div>
+</nav>
+<!-- NAVBAR END -->
+
+<!-- HERO -->
+<hero>
+  <img src="hero/hero.png" alt="Hero Image" class="object-cover w-full h-full">
+</hero>
+<!-- HERO END -->
+
+<!-- ABOUT -->
+<div class="about" id="about">
+  <div class="container mx-auto px-4 md:px-4 lg:px-[8rem] flex flex-col md:flex-row items-center mt-5">
+    <div class="md:w-2/3">
+      <h2 class="text-3xl font-bold mb-4">About Us</h2>
+      <div class="flex justify-center items-center p-5">        
+        <img src="logo/logo-pastea-sweet.png" alt="Logo" class="w-[50%] h-auto bg-cover">
+      </div>
+      <p class="text-lg">
+        Selamat datang di Pastea Sweet!
+        Di Pastea Sweet, kami percaya bahwa segelas es teh yang
+        sempurna dapat mengubah setiap momen menjadi
+        pengalaman yang menyenangkan. Didirikan oleh 5 orang BSI Kaliabang,
+        kecintaan kami terhadap teh dan komitmen terhadap
+        kualitas telah mendorong kami untuk menciptakan berbagai
+        pilihan es teh yang unik, dan trendi.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- ABOUT END -->
+
+<!-- VISI DAN MISI -->
+<div class="visi-misi">
+  <div class="container mx-auto px-4 md:px-4 lg:px-[8rem] flex flex-col md:flex-row items-center p-10">
+    <div class="md:w-2/3">
+      <h2 class="text-3xl font-bold mb-4">Vision & Mission</h2>
+      <p class="text-lg">
+        Visi dan Misi kami adalah menghadirkan rasa es teh yang unik dan trendi,
+        menjadi pilihan utama generasi muda dengan memberikan kesegaran dan
+        kenikmatan di setiap tegukan. Untuk mencapai visi ini, kami berkomitmen
+        mengembangkan varian rasa es teh yang kreatif sesuai selera pasar, membangun
+        brand yang kuat dan modern di kalangan anak muda, membuka peluang kerja untuk
+        mendukung pertumbuhan ekonomi lokal, serta menjalin kerjasama dengan berbagai
+        pihak demi memperluas jangkauan bisnis.
+      </p>
+    </div>
+    <div class="md:w-1/3 flex justify-center md:justify-end mt-4 md:mt-0">
+      <img src="icon-visi-misi.png" alt="Logo" class="w-[50%] h-auto bg-cover">
+    </div>
+  </div>
+</div>
+<!-- VISI DAN MISI END -->
+
+<div class="product bg-[#0A4E51]" id="menu">
+  <div class="container mx-auto px-4 md:px-4 lg:px-[8rem] items-center p-10">
+    <h2 class="text-3xl font-bold mb-4 text-center text-white">Variant Product</h2>
+    <div
+      class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8 place place-items-start md:place-items-center lg:place-items-center mt-[60px]">
+      <div class="flex items-center gap-3">
+        <div class="justify-center w-20 h-20 rounded-full bg-[url('bg3.jpg')] bg-cover   overflow-hidden">
+          <div class="absolute w-24 h-32 -rotate-12">
+            <img src="product/thai-tea.png" alt="Thai Tea" class="w-full h-full object-cover -translate-y-14">
+          </div>
+        </div>
+        <div class="desc">
+          <h3 class="text-2xl font-bold text-white">Thai Tea</h3>
+          <span class="font-bold text-xl text-[#E88D67]">Rp 8.000</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="justify-center w-20 h-20 rounded-full bg-[url('bg3.jpg')] bg-cover overflow-hidden">
+          <div class="absolute w-24 h-32 -rotate-12">
+            <img src="product/lychee-tea.png" alt="Milk Tea" class="w-full h-full object-cover -translate-y-14">
+          </div>
+        </div>
+        <div class="desc">
+          <h3 class="text-2xl font-bold text-white">Lychee Tea</h3>
+          <span class="font-bold text-xl text-[#E88D67]">Rp 8.000</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-3">
+        <div class="justify-center w-20 h-20 rounded-full bg-[url('bg3.jpg')] bg-cover   overflow-hidden">
+          <div class="absolute w-24 h-32 -rotate-12">
+            <img src="product/mango-tea.png" alt="Milk Tea" class="w-full h-full object-cover -translate-y-14">
+          </div>
+        </div>
+        <div class="desc">
+          <h3 class="text-2xl font-bold text-white">Mango Tea</h3>
+          <span class="font-bold text-xl text-[#E88D67]">Rp 8.000</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCT DESCRIPTION -->
+<div class="about" id="about">
+  <div class="container mx-auto px-4 md:px-4 lg:px-[8rem] flex flex-col md:flex-row items-center mt-5">
+    <div class="md:w-2/3">
+      <h2 class="text-3xl font-bold mb-4">Product Description</h2>
+      <ul class="list-disc pl-5 text-md">
+        <li><span class="text-[#0A4E51] font-bold">Thai Tea</span>, dibuat dengan resep otentik menggunakan teh hitam berkualitas yang diseduh dengan susu kental manis. Hasilnya adalah minuman Thai Tea yang creamy, sedikit manis, dan cocok dinikmati kapan saja.</li>
+        <li><span class="text-[#0A4E51] font-bold">Mango Tea</span>, menyajikan perpaduan sempurna antara teh pilihan berkualitas dengan ekstrak mangga segar yang memberikan rasa manis dan sedikit asam yang menyeimbangkan.</li>
+        <li><span class="text-[#0A4E51] font-bold">Lychee Tea</span>, terbuat dari teh asli dengan tambahan campuran madu, yang diseduh sempurna dan dipadukan dengan ekstrak leci asli yang memberikan rasa manis alami dan aroma yang khas. Nikmati sensasi tropis yang menyegarkan dalam setiap tegukan.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- END -->
+
+<!-- JOB DESCRIPTION -->
+<div class="about" id="about">
+  <div class="container mx-auto px-4 md:px-4 lg:px-[8rem] flex flex-col md:flex-row items-center p-10">
+    <div class="md:w-2/3">
+      <h2 class="text-3xl font-bold mb-4">Job Description</h2>
+      <div class="flex justify-center items-center">        
+        <img src="team/team.png" alt="Logo" class="w-[50%] h-auto bg-cover">
+      </div>
+      <ul class="list-disc pl-5 text-md">
+        <li><span class="text-[#0A4E51] font-bold">Rahmadi Cahyo Saputro | Leader</span>, Memimpin dan Memastikan Tujuan Bisnis Tercapai.</li>
+        <li><span class="text-[#0A4E51] font-bold">Muhammad Aditya Ananda | Financial</span>, Mengelola dan Mencatat semua pemasukan dan pengeluaran usaha secara rinci. .</li>
+        <li><span class="text-[#0A4E51] font-bold">Naufal Hakim | Tea Barista</span>,	Menyiapkan dan membuat es teh sesuai resep dan standar kualitas.</li>
+        <li><span class="text-[#0A4E51] font-bold">Syifa Aulia | Marketing</span>, Mempromosikan Produk.</li>
+        <li><span class="text-[#0A4E51] font-bold">Rifa Dini Arifah | Waitress</span>,	Melayani pelanggan dengan ramah dan profesional.  
+          dan	Membantu pelanggan memesan dan menjawab pertanyaan terkait menu es teh.
+          </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- ABOUT END -->
+
+
+<footer class="bg-[#F3F7EC] py-5">
+  <div class="container  px-4 md:px-4 lg:px-[8rem] max-w-6xl grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-6">
+    <div class="brand-container">
+      <div class="brand">
+        <h1 class="text-xl font-bold">Pastea Sweet</h1>
+      </div>
+      <div class="deskripsi-brand mt-3 mb-5 lg:mb-0 md:mb-0">
+        <!-- <p class="text-sm text-[#ffffff] leading-loose mb-3"></p> -->
+
+        <div class="social-media flex gap-3">
+          <a href="https://www.instagram.com/logo-pastea-sweet.png_/" target="_blank">
+            <img src="ig_logo.png" alt="instagram-pastea-sweet" class="object-cover h-[30px]">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="item-container grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 mr-auto md:mr-auto lg:ml-auto  gap-4">
+      <div class="peta-situs ">
+        <h3 class="text-md font-bold">Peta Situs</h3>
+        <ul class="text-sm mt-3">
+          <li class="mb-2 flex items-center">
+            <a href="/" class="text-sm leading-snug hover:opacity-75 flex items-center">
+              <p class="inline text-md font-semibold m-0">Beranda</p>
+            </a>
+          </li>
+          <li class="mb-2 flex items-center">
+            <a href="#about" class="text-sm leading-snug hover:opacity-75 flex items-center">
+              <p class="inline text-md font-semibold m-0">About Us</p>
+            </a>
+          </li>
+          <li class="flex items-center">
+            <a href="#menu" class="text-sm leading-snug hover:opacity-75 flex items-center">
+              <p class="inline text-md font-semibold m-0">Menu</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="lisensi text-center  mt-10">
+    <p>&copy; 2024 Pastea Sweet. All rights reserved.</p>
+  </div>
+</footer>
+
+<div class="grid place-content-end items-center">
+  <a href="https://wa.me/6282110485499?text=Hallo%2C%20saya%20ingin%order...  " target="_blank"
+    class="bg-[#E88D67] rounded-t-[15px] px-5 lg:px-5 p-2 fixed bottom-0 right-0 text-xs md:text-sm lg:text-sm flex gap-2 items-center">
+    <img src="wa_logo.png" class="h-5" alt="">
+    <span class="hidden md:block lg:block font-semibold">Contact</span>
+  </a>
+</div>
+
+<script>
+  function toggleMenu() {
+    const navMenu = document.getElementById('navMenuMobile');
+    navMenu.classList.toggle('hidden'); // Toggle visibility of the mobile menu
+  }
+</script>
+
+
+</html>
